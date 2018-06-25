@@ -13,10 +13,12 @@ const argv = yargs
     .alias('help','h') //alias for help
     .argv;
 
-console.log(argv);
+var addr = argv.a;
+var eAddr = encodeURIComponent(addr);
+
 
 request({
-    url: 'https://maps.googleapis.com/maps/api/geocode/json?address=1301%20lombard%20street%20philadelphia',
+    url: `https://maps.googleapis.com/maps/api/geocode/json?address=${eAddr}`,
     //incoming data will be json take it and convert it to an object.
     json: true
 }, (error, response, body) => {
