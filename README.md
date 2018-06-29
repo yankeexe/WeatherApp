@@ -4,4 +4,4 @@
  Get the latest weather information about anyplace on Earth. 
  ### Usage 
  ```javascript
- npm start 'name_of_place/postal code'
+ npm start 'name_of_place || postal code'
