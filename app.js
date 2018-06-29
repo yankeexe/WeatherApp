@@ -12,7 +12,7 @@ const argv = yargs
         u:{
             alias: 'units',
             describe: 'Desired unit of Weather Info, more on Readme.md',
-            string: true
+            string: true 
         }
     })
     .help()
